@@ -1,5 +1,4 @@
 summary: Inspect a page's network activity.
-
 id: 6-network
 categories: Debugging
 tags: devtools

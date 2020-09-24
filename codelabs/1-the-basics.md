@@ -6,7 +6,7 @@ status: Published
 authors: Alberto López-Barranco
 Feedback Link: https://github.com/albelop
 
-# Chrome DevTools: The basics
+# 1- Chrome DevTools: The basics
 <!-- ------------------------ -->
 
 ## Introduction
@@ -113,6 +113,8 @@ Though it is not exactly a panel, this mode lets you simulate mobile devices.
 The command menu gives you quick access to most of the functionalities and configurations in Chrome DevTools. It also allows you to navigate through your project files and execute code snippets.
 
 To open the Command Menu, press `Ctrl+Shift+P` or `Command+Shift+P` if you are using Mac. Also you can click `Customize And Control DevTools` and then select `Run command`.
+
+![Command menu](https://developers.google.com/web/tools/chrome-devtools/javascript/imgs/disable-javascript.png)
 
 ### Possible actions
 
