@@ -6,7 +6,7 @@ status: Published
 authors: Alberto López-Barranco
 Feedback Link: https://github.com/albelop
 
-# Debugging JavaScript
+# 4) Debugging JavaScript
 
 <!-- ------------------------ -->
 

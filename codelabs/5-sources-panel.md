@@ -6,7 +6,7 @@ status: Published
 authors: Alberto López-Barranco
 Feedback Link: https://github.com/albelop
 
-# Sources panel
+# 5) Sources panel
 <!-- ------------------------ -->
 
 ## Snippets

@@ -6,7 +6,7 @@ status: Published
 authors: Alberto López-Barranco
 Feedback Link: https://github.com/albelop
 
-# 1- Chrome DevTools: The basics
+# 1) Chrome DevTools: The basics
 <!-- ------------------------ -->
 
 ## Introduction
@@ -39,7 +39,7 @@ DevTools can either be opened in a separate window, or docked in the browser win
 ![Layout positions](./assets/layout_positions.png)
 
 Positive
-: Tip: Use `Ctrl+Shift+D` to restore last dock position.
+: **💡 Tip:** Use `Ctrl+Shift+D` to restore last dock position.
 
 <!-- ------------------------ -->
 
@@ -132,3 +132,8 @@ The first character in the command line defines the type of action you want to p
 
 
 ![Command panel actions](https://developers.google.com/web/tools/chrome-devtools/command-menu/imgs/actions.png)
+
+Negative
+: **👁‍🗨 Try it yourself!**
+Access the Command panel in this page **and explore** the different options for making screenshots.
+Hint: type "screenshot" to filter the commands.
