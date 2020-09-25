@@ -66,43 +66,117 @@ Open the Chrome DevTools in this page and enable the designMode in the Console. 
 
 ## Getting stated with CSS 
 
-In this section you will learn the basics of viewing and editing a page's CSS usgin Chrome DevTools.
+In this section you will learn the basics of viewing and editing a page's CSS using Chrome DevTools.
 
 ### View an element's CSS
+
+When you inspect a node with the Inspect tool, the **Styles tab** on the Elements panel will show the list of CSS rules being applied to the current node, grouped by selectors and files.
+You can disable a CSS rule just by hovering over the rule and unticking the checkbox that is shown before the rule.
+
+You can also change both the name of a rule or its value by clicking on it and typing the new name/value. Those rules that have a striketrough are either disabled or overriden by another rule with a greater precedence.
+
+![Edit CSS](./assets/2_edit_css.gif)
+
+
+Negative
+: **👁‍🗨 Try it yourself!**
+Some CSS values, like color or shadow-box, have an interactive menu that allows quick and easy changes. Try changinf the background color of this info alert.
+
+Positive
+: **💡 Tip:** Search for **Panel layout** in the **Command Panel** to alternate the position of the Styles tab (vertical/horizontal).
+
+
 
 
 ### Add CSS declaration
 
+To add new CSS styles to your page you can use several methods:
 
-### Add class
+- Add a new rule inside an existing CSS selector: Click once anywhere on the blank space of a CSS rule group and Chrome DevTools will add a new entry.
+- Add new inline styles: Do the same as before, but in the `element.style` rule.
+- Create a new rule: Click on the `+` icon on the top bar of the Styles tab to create a completely new rule. If you long press the icon you can choose in which file you want to add the rule.
 
+Positive
+: **💡 Tip:** The changes done in the Styles panel can be synced to your project, so any change made here is reflected in your CSS file. Check the Codelab "Sources Panel" for more info.
 
-### Add pseudostate
+### Add classes and pseudostates
+
+The `.cls` button gives you a list of the CSS classes of the current node and lets you add new ones easily. The same can be also accomplished by editing the "class" attribute of the node in the Elements Panel.
+
+Similarly, the `:hov` button show the list of pseudostates that you can "force" to analyze the different behaviors of a node's styles.
+
+![Force pseudostate](./assets/2_pseudostates.gif)
+
 
 
 ### Change dimensions (box model)
 
+Normally, when we work with the box model in CSS, we have to struggle with the sometimes unfriendly syntax for margins, paddings and borders. To ease our way, Chrome DevTools shows a visual representation of an elements box model at the bottom of the Styles tab. Here you can quickly adjust the values, including width and height, and see the result reflected in your page.
+
+![Box model](./assets/2_boxmodel.gif)
+
+Negative
+: **👁‍🗨 Try it yourself!**
+Use the interactive box model editor to make the above's image smaller and with more blank space around it.
 
 <!-- ------------------------ -->
 
 ## CSS Reference
 
-### View CSS declaration
-
 ### Computed styles
+
+As soon as your web page starts growing, it is likely that many of the CSS rules of an element get overriden by others, making it too difficult to know which exact rule is being taken in account at a certain moment. If your styles are splitted in several files, it can get even worse.
+The **Computed** tab shows you the list of CSS rules that currently affect the selected node. You can expand each rule to see the chain of rules that are being applied/overriden, and its corresponding files.
+
+![Computed Styles](./assets/2_computed_styles.png)
+
+Positive
+: **💡 Tip:** The **Show all** checkbox will show all inherited values, including the "default" styles applied by the browser/user agent.
 
 ### Filter
 
-### Add declaration: inline vs rule
+Use the **Filter** text box on the **Styles** and **Computed** tabs to search for specific CSS properties or values.
 
-### Activate/deactivate declarations
+To also search inherited properties in the **Computed** tab, check the **Show All** checkbox.
 
+![Filter CSS](./assets/2_filter_css.png)
+
+### View a page in print mode
+
+To view a page in print mode:
+
+- Open the **Command Menu**.
+- Start typing **Print**.
+- Select **Emulate CSS Print Media type**.
+
+Positive
+: **💡 Tip:** Repeat the process and choose **Do not Emulate Media type** to disable.
+ 
 
 <!-- ------------------------ -->
 
 ## Animations
 
+The Animation Inspector in Chrome DevTools allows you to:
+
+- Capture animations. It automatically detects animations and sorts them into groups.
+- Inspect animations by slowing them down, replaying them, or viewing their source code.
+- Modify animations by changing their timing, delay, duration, or keyframe offsets.
+
+The faster way to access the Animation Inspector Drawer is by searching for **Animations** in the **Command Panel**.
+You can also open it via menu.
+
+![Animations menu](./assets/animations-via-main-menu.png)
+
 ### Inspect
+
+To capture an animation, just perform the interaction that triggers the animation while the Animation Inspector is open. If an animation is triggered on page load, you can help the Animation Inspector detect the animation by reloading the page.
+
+![Inspect Animations](./assets/2_animations.gif)
+
 ### Timeline
+
+The Timeline will show a list with all the elements that
+
 ### Change speed
 ### Modify
