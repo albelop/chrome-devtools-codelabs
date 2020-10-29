@@ -22,6 +22,7 @@ Positive
 <!-- ------------------------ -->
 
 ## Opening Chrome DevTools
+Duration: 1
 
 There are many ways to access the Chrome DevTools when you are in a webpage:
 
@@ -44,6 +45,7 @@ Positive
 <!-- ------------------------ -->
 
 ## Panels
+Duration: 1
 
 ### Elements panel
 
@@ -109,6 +111,7 @@ Though it is not exactly a panel, this mode lets you simulate mobile devices.
 <!-- ------------------------ -->
 
 ## Command Menu
+Duration: 1
 
 The command menu gives you quick access to most of the functionalities and configurations in Chrome DevTools. It also allows you to navigate through your project files and execute code snippets.
 

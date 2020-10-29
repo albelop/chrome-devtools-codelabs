@@ -12,11 +12,11 @@ Feedback Link: https://zarin.io
 Duration: 1
 
 ### What You’ll Learn 
-- how to set the amount of time each slide will take to finish 
-- how to include code snippets 
-- how to hyperlink items 
-- how to include images 
-- other stuff
+- ✅ how to set the amount of time each slide will take to finish 
+- ✅ how to include code snippets 
+- ✅ how to hyperlink items 
+- ✅ how to include images 
+- ✅ other stuff
 
 <!-- ------------------------ -->
 ## Setting Duration
@@ -60,7 +60,7 @@ Duration: 1
 [Youtube - Halsey Playlists](https://www.youtube.com/user/iamhalsey/playlists)
 
 ### Images
-![alt-text-here](assets/radio-group.gif)
+![alt-text-here](assets/animations-via-main-menu.png)
 
 <!-- ------------------------ -->
 ## Other Stuff
