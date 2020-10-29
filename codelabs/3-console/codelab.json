@@ -1,0 +1,25 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2020-10-01T17:35:49+02:00",
+  "id": "3-console",
+  "duration": 1,
+  "title": "3) Console panel",
+  "authors": "Alberto López-Barranco",
+  "summary": "View your logged messages and run JavaScript.",
+  "source": ".\\3-console.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "debugging"
+  ],
+  "tags": [
+    "devtools"
+  ],
+  "feedback": "https://github.com/albelop",
+  "url": "3-console"
+}

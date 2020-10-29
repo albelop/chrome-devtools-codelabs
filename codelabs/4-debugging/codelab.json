@@ -1,0 +1,25 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2020-09-25T07:51:09+02:00",
+  "id": "4-debugging",
+  "duration": 0,
+  "title": "4) Debugging JavaScript",
+  "authors": "Alberto López-Barranco",
+  "summary": "Pause and debug your Javascript code, watch variable changes, manage listeners and breakpoints…",
+  "source": ".\\4-debugging-js.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "debugging"
+  ],
+  "tags": [
+    "devtools"
+  ],
+  "feedback": "https://github.com/albelop",
+  "url": "4-debugging"
+}

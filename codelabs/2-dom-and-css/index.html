@@ -1,0 +1,149 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>2) DOM &amp; CSS</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="2-dom-and-css"
+                  title="2) DOM &amp; CSS"
+                  environment="web"
+                  feedback-link="https://github.com/albelop">
+    
+      <google-codelab-step label="Traversing the DOM" duration="0">
+        <p>Being able to navigate through the DOM and analyze all the nodes in your pages is one of the first things you need to know when you debug your page. Chrome DevTools offer several options to traverse the DOM and its elements in the Elements panel.</p>
+<p>Use <code>Left click + Inspect</code> to inspect a specific node, or you can also use the Inspect button on the top left corner of the DevTools.</p>
+<p class="image-container"><img alt="Inspect nodes" src="img\e4371f77c581c9ae.gif"></p>
+<aside class="special"><p><strong>💡 Tip:</strong> When hovering over a node with the Inspect tool, a popover will show additional information, including the font, the color, and some a11y metrics.</p>
+</aside>
+<p>You can traverse the DOM tree in the elements panel with the arrow keys. Use up and down to navigate between elements, and left and right to expand/collapse the nodes.</p>
+<p>When you need to find a specific node, use the search function with <code>Ctrl+F</code>. Search can be performed by string, by CSS selector or by XPath.</p>
+<aside class="special"><p><strong>💡 Tip:</strong> When the element you want to inspect is not visible in your window due to scrolling, select the node in the elements panel and use <code>Right click &gt; Scroll into view</code> to move the scroll to that element.</p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Edit the DOM" duration="0">
+        <p>Some times you need to make a quick change in your page texts, or reorganize the layout of the page to see which design fits better, just for testing or to take a screenshot. In those cases, the elements panel allows you to:</p>
+<ul>
+<li>Modify a node: <code>Double click</code> on the node&#39;s content, tag, attribute name or attribute value to update it.</li>
+<li>Edit as HTML: <code>Right click &gt; Edit as HTMl</code> on a node to edit its full HTML content, including its children.</li>
+<li>Remove node: Simply press <code>Delete</code> to totally remove a node from the DOM.</li>
+<li>Reorder nodes: just drag and drop a node in the elements panel. Nodes can be moved in the same level, but also accross different levels/parents.</li>
+<li>Force state: <code>Right click &gt; Force state</code> allows you to force some special states of the node like <code>:hover</code>, <code>:focus</code> or <code>:visited</code>. This is specially useful when you need to analyze a button or link behavior and styles.</li>
+<li>Hide an element: Press <code>H</code> on your keyboard to instantly hide the selected node from the DOM. You can use it to obscure sensitive information before taking a screenshot.</li>
+</ul>
+<aside class="warning"><p><strong>⚠ WARNING</strong><br>The modifications in the DOM tree inside the Elements panel are not persistant. Use it for testing purposes and then update your source code accordingly if needed.</p>
+</aside>
+<p class="image-container"><img alt="Edit the DOM" src="img\a68dcefb58a2608d.gif"></p>
+<aside class="special"><p><strong>💡 Tip:</strong> Use <code>Ctrl+z</code> to undo any change you make in the Elements panel.</p>
+</aside>
+<p>There is a special command that can be executed in the Console: <code>document.designMode = &#39;on&#39;</code>. This will make all the text in your page editable, as if it was a WYSISIG editor. It has shortcuts for bold, italic... and even emojis!<br>Disable the design mode with <code>document.designMode = &#39;off&#39;</code>.</p>
+<aside class="warning"><p><strong>👁‍🗨 Try it yourself!</strong><br>Open the Chrome DevTools in this page and enable the designMode in the Console. You can now freely modify the contents. Take in account that all the event handlers (clicks, keypress...) are not disabled.</p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Getting stated with CSS" duration="0">
+        <p>In this section you will learn the basics of viewing and editing a page&#39;s CSS using Chrome DevTools.</p>
+<h2 is-upgraded>View an element&#39;s CSS</h2>
+<p>When you inspect a node with the Inspect tool, the <strong>Styles tab</strong> on the Elements panel will show the list of CSS rules being applied to the current node, grouped by selectors and files.<br>You can disable a CSS rule just by hovering over the rule and unticking the checkbox that is shown before the rule.</p>
+<p>You can also change both the name of a rule or its value by clicking on it and typing the new name/value. Those rules that have a striketrough are either disabled or overriden by another rule with a greater precedence.</p>
+<p class="image-container"><img alt="Edit CSS" src="img\8386397b1f2a38d9.gif"></p>
+<aside class="warning"><p><strong>👁‍🗨 Try it yourself!</strong><br>Some CSS values, like color or shadow-box, have an interactive menu that allows quick and easy changes. Try changinf the background color of this info alert.</p>
+</aside>
+<aside class="special"><p><strong>💡 Tip:</strong> Search for <strong>Panel layout</strong> in the <strong>Command Panel</strong> to alternate the position of the Styles tab (vertical/horizontal).</p>
+</aside>
+<h2 is-upgraded>Add CSS declaration</h2>
+<p>To add new CSS styles to your page you can use several methods:</p>
+<ul>
+<li>Add a new rule inside an existing CSS selector: Click once anywhere on the blank space of a CSS rule group and Chrome DevTools will add a new entry.</li>
+<li>Add new inline styles: Do the same as before, but in the <code>element.style</code> rule.</li>
+<li>Create a new rule: Click on the <code>+</code> icon on the top bar of the Styles tab to create a completely new rule. If you long press the icon you can choose in which file you want to add the rule.</li>
+</ul>
+<aside class="special"><p><strong>💡 Tip:</strong> The changes done in the Styles panel can be synced to your project, so any change made here is reflected in your CSS file. Check the Codelab &#34;Sources Panel&#34; for more info.</p>
+</aside>
+<h2 is-upgraded>Add classes and pseudostates</h2>
+<p>The <code>.cls</code> button gives you a list of the CSS classes of the current node and lets you add new ones easily. The same can be also accomplished by editing the &#34;class&#34; attribute of the node in the Elements Panel.</p>
+<p>Similarly, the <code>:hov</code> button show the list of pseudostates that you can &#34;force&#34; to analyze the different behaviors of a node&#39;s styles.</p>
+<p class="image-container"><img alt="Force pseudostate" src="img\7e4dbe931398c22a.gif"></p>
+<h2 is-upgraded>Change dimensions (box model)</h2>
+<p>Normally, when we work with the box model in CSS, we have to struggle with the sometimes unfriendly syntax for margins, paddings and borders. To ease our way, Chrome DevTools shows a visual representation of an elements box model at the bottom of the Styles tab. Here you can quickly adjust the values, including width and height, and see the result reflected in your page.</p>
+<p class="image-container"><img alt="Box model" src="img\3b6ec8192b178a83.gif"></p>
+<aside class="warning"><p><strong>👁‍🗨 Try it yourself!</strong><br>Use the interactive box model editor to make the above&#39;s image smaller and with more blank space around it.</p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="CSS Reference" duration="0">
+        <h2 is-upgraded>Computed styles</h2>
+<p>As soon as your web page starts growing, it is likely that many of the CSS rules of an element get overriden by others, making it too difficult to know which exact rule is being taken in account at a certain moment. If your styles are splitted in several files, it can get even worse.<br>The <strong>Computed</strong> tab shows you the list of CSS rules that currently affect the selected node. You can expand each rule to see the chain of rules that are being applied/overriden, and its corresponding files.</p>
+<p class="image-container"><img alt="Computed Styles" src="img\f6a71b3f9f62bbb7.png"></p>
+<aside class="special"><p><strong>💡 Tip:</strong> The <strong>Show all</strong> checkbox will show all inherited values, including the &#34;default&#34; styles applied by the browser/user agent.</p>
+</aside>
+<h2 is-upgraded>Filter</h2>
+<p>Use the <strong>Filter</strong> text box on the <strong>Styles</strong> and <strong>Computed</strong> tabs to search for specific CSS properties or values.</p>
+<p>To also search inherited properties in the <strong>Computed</strong> tab, check the <strong>Show All</strong> checkbox.</p>
+<p class="image-container"><img alt="Filter CSS" src="img\e0ae05191f7f7a42.png"></p>
+<h2 is-upgraded>View a page in print mode</h2>
+<p>To view a page in print mode:</p>
+<ul>
+<li>Open the <strong>Command Menu</strong>.</li>
+<li>Start typing <strong>Print</strong>.</li>
+<li>Select <strong>Emulate CSS Print Media type</strong>.</li>
+</ul>
+<aside class="special"><p><strong>💡 Tip:</strong> Repeat the process and choose <strong>Do not Emulate Media type</strong> to disable.</p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Animations" duration="0">
+        <p>The Animation Inspector in Chrome DevTools allows you to:</p>
+<ul>
+<li>Capture animations. It automatically detects animations and sorts them into groups.</li>
+<li>Inspect animations by slowing them down, replaying them, or viewing their source code.</li>
+<li>Modify animations by changing their timing, delay, duration, or keyframe offsets.</li>
+</ul>
+<p>The faster way to access the Animation Inspector Drawer is by searching for <strong>Animations</strong> in the <strong>Command Panel</strong>.<br>You can also open it via menu.</p>
+<p class="image-container"><img alt="Animations menu" src="img\4b342a71bbc5b45a.png"></p>
+<h2 is-upgraded>Inspect</h2>
+<p>To capture an animation, just perform the interaction that triggers the animation while the Animation Inspector is open. If an animation is triggered on page load, you can help the Animation Inspector detect the animation by reloading the page.</p>
+<p class="image-container"><img alt="Inspect Animations" src="img\bfd6db4b778ca1c0.gif"></p>
+<h2 is-upgraded>Timeline</h2>
+<p>The Timeline will show a list with all the elements that</p>
+<h2 is-upgraded>Change speed</h2>
+<h2 is-upgraded>Modify</h2>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2020-09-25T07:51:09+02:00",
+  "id": "5-sources-panel",
+  "duration": 0,
+  "title": "5) Sources panel",
+  "authors": "Alberto López-Barranco",
+  "summary": "Save the changes you make in DevTools to you local drive.",
+  "source": ".\\5-sources-panel.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "debugging"
+  ],
+  "tags": [
+    "devtools"
+  ],
+  "feedback": "https://github.com/albelop",
+  "url": "5-sources-panel"
+}

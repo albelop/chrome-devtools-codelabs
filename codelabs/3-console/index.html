@@ -1,0 +1,104 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>3) Console panel</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="3-console"
+                  title="3) Console panel"
+                  environment="web"
+                  feedback-link="https://github.com/albelop">
+    
+      <google-codelab-step label="Introduction" duration="1">
+        <p>View your logged messages and run JavaScript.</p>
+<h2 class="checklist" is-upgraded>What You&#39;ll Learn</h2>
+<ul class="checklist">
+<li>✅ How to use different logging types</li>
+<li>✅ Structure the logged data in tables</li>
+<li>✅ Group logs and style them with CSS rules</li>
+<li>✅ Use the Console panel as a REPL</li>
+<li>✅ Some useful degugging commands from Utilities API</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Logging" duration="0">
+        <p>Let&#39;s explore the different types of logging messages in the Console, apart from the classic <code>console.log(msg)</code>.</p>
+<h2 is-upgraded>Warning &amp; errors</h2>
+<pre><code>console.log(&#39;This is a normal message&#39;);
+
+console.warn(&#39;This is a warning message&#39;);
+
+console.error(&#39;This is an error!&#39;);
+
+</code></pre>
+<aside class="warning"><p><strong>👁‍🗨 Try it yourself!</strong><br>Open the Console panel in DevTools and execute the lines above. Observe the different styling that each message gets.</p>
+</aside>
+<h2 is-upgraded>Tracing</h2>
+<p>If you need to know the stack of functions that led to the execution of a certain line/log, you can use <code>console.trace(msg)</code>.</p>
+<pre><code>const loggingTrace = () =&gt; {
+  const multiply = (a, b) =&gt; {
+    console.trace(a * b);
+  };
+
+  multiply(5, 10);
+};
+
+
+logginTrace();
+
+</code></pre>
+<aside class="warning"><p><strong>👁‍🗨 Try it yourself!</strong><br>Execute the code and expand the result to see the stack trace.</p>
+</aside>
+<h2 is-upgraded>Working with Arrays of Objects</h2>
+<p>The</p>
+<p class="image-container"><img alt="Logging arrays" src="img\e2b383c74f5017c3.png"><img alt="Logging arrays" src="img\470123caefee4e86.png"></p>
+<aside class="special"><p><strong>💡 Tip:</strong> Use an array of keys as a second parameter for <code>console.table</code> to render only the given keys as columns.<br><img alt="Logging arrays" src="img\9e355fe06e30c556.png"></p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Run JavaScript" duration="0">
+        
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Select elements" duration="0">
+        
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Monitoring" duration="0">
+        
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
+
+</body>
+</html>

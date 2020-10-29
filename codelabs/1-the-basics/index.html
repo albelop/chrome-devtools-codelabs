@@ -1,0 +1,126 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>1) Chrome DevTools: The basics</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="1-the-basics"
+                  title="1) Chrome DevTools: The basics"
+                  environment="web"
+                  feedback-link="https://github.com/albelop">
+    
+      <google-codelab-step label="Introduction" duration="1">
+        <p>Welcome to this series of codelabs about Chrome DevTools. In it we will deeply explore many of the functionalities that DevTools offer, from a basic level to more advanced topics like code execution, persisting changes or network analysis.<br>The codelabs are split in topics, normally related to each of the DevTools panels (Elements, Console, Sources...), which we will explore later on.</p>
+<aside class="special"><p>&#34;Chrome DevTools is a set of web developer tools built directly into the Google Chrome browser. DevTools can help you edit pages on-the-fly and diagnose problems quickly, which ultimately helps you build better websites, faster.&#34; <a href="https://developers.google.com/web/tools/chrome-devtools" target="_blank">ChromeDevTools documentation</a></p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Opening Chrome DevTools" duration="1">
+        <p>There are many ways to access the Chrome DevTools when you are in a webpage:</p>
+<ul>
+<li>You can toggle the DevTools window on and off, by using either <code>F12</code> or <code>Ctrl+Shift+I</code>.</li>
+<li>Or go to <code>Chrome Menu (�</code>�)  &gt; <code>More tools</code> &gt; <code>Developer Tools</code>.</li>
+<li>To directly access a DOM element in the Elements panel, right click on that element and select &#34;Inspect&#34;.</li>
+<li>Or press <code>Ctrl+Shift+C</code> to select the element you want to inspect.</li>
+</ul>
+<h2 is-upgraded>Changing the layout</h2>
+<p>DevTools can either be opened in a separate window, or docked in the browser windows you are debugging. The settings menu shows the different docking options.</p>
+<p class="image-container"><img alt="Layout positions" src="img\9537b1c83702a8ac.png"></p>
+<aside class="special"><p><strong>💡 Tip:</strong> Use <code>Ctrl+Shift+D</code> to restore last dock position.</p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Panels" duration="1">
+        <h2 is-upgraded>Elements panel</h2>
+<p>View and change the DOM and CSS</p>
+<p class="image-container"><img alt="Elements panel" src="img\cada488938b7c478.png"></p>
+<h2 is-upgraded>Console panel</h2>
+<p>View messages and run JavaScript from the Console.</p>
+<p class="image-container"><img alt="Console panel" src="img\6eb3f94438b57927.png"></p>
+<h2 is-upgraded>Sources panel</h2>
+<p>Debug JavaScript, persist changes made in DevTools across page reloads, save and run snippets of JS, and save changes that you make in DevTools to disk.</p>
+<p class="image-container"><img alt="Sources panel" src="img\644a299f4acfa71b.png"></p>
+<h2 is-upgraded>Network panel</h2>
+<p>View and debug network activity.</p>
+<p class="image-container"><img alt="Network panel" src="img\1a6101971393941b.png"></p>
+<h2 is-upgraded>Performance panel</h2>
+<p>Find ways to improve load and runtime performance.</p>
+<p class="image-container"><img alt="Performance panel" src="img\e7ecbb642039dd16.png"></p>
+<h2 is-upgraded>Memory panel</h2>
+<p>Profile memory usage and track down leaks.</p>
+<p class="image-container"><img alt="Memory panel" src="img\acd32a321a3bddb.png"></p>
+<h2 is-upgraded>Application panel</h2>
+<p>Inspect all resources that are loaded, including databases, local and session storage, cookies, Application Cache, images, fonts, and stylesheets.</p>
+<p class="image-container"><img alt="Application panel" src="img\368ae41d30eeb1fe.png"></p>
+<h2 is-upgraded>Security panel</h2>
+<p>Debug mixed content issues, certificate problems, and more.</p>
+<p class="image-container"><img alt="Security panel" src="img\9f5c2f3afe59caef.png"></p>
+<h2 is-upgraded>Device mode</h2>
+<p>Though it is not exactly a panel, this mode lets you simulate mobile devices.</p>
+<p class="image-container"><img alt="Device mode" src="img\86315419442b173.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Command Menu" duration="1">
+        <p>The command menu gives you quick access to most of the functionalities and configurations in Chrome DevTools. It also allows you to navigate through your project files and execute code snippets.</p>
+<p>To open the Command Menu, press <code>Ctrl+Shift+P</code> or <code>Command+Shift+P</code> if you are using Mac. Also you can click <code>Customize And Control DevTools</code> and then select <code>Run command</code>.</p>
+<p class="image-container"><img alt="Command menu" src="img\47839b674a1a4285.png"></p>
+<h2 is-upgraded>Possible actions</h2>
+<p>The first character in the command line defines the type of action you want to perform:</p>
+<table>
+<tr></tr>
+<tr><td colspan="1" rowspan="1"><p>&gt;</p>
+</td><td colspan="1" rowspan="1"><p>Run command</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>...</p>
+</td><td colspan="1" rowspan="1"><p>Open file</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>:</p>
+</td><td colspan="1" rowspan="1"><p>Go to line</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>@</p>
+</td><td colspan="1" rowspan="1"><p>Go to symbol</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>!</p>
+</td><td colspan="1" rowspan="1"><p>Run snippet</p>
+</td></tr>
+</table>
+<p class="image-container"><img alt="Command panel actions" src="img\c10e413500b00929.png"></p>
+<aside class="warning"><p><strong>👁‍🗨 Try it yourself!</strong><br>Access the Command panel in this page <strong>and explore</strong> the different options for making screenshots.<br>Hint: type &#34;screenshot&#34; to filter the commands.</p>
+</aside>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
+
+</body>
+</html>

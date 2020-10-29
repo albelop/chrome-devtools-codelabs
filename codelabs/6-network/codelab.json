@@ -1,0 +1,25 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2020-09-25T00:06:00+02:00",
+  "id": "6-network",
+  "duration": 0,
+  "title": "6) Network",
+  "authors": "Alberto López-Barranco",
+  "summary": "Inspect a page’s network activity.",
+  "source": ".\\6-network.md",
+  "theme": "",
+  "status": [
+    "published"
+  ],
+  "category": [
+    "debugging"
+  ],
+  "tags": [
+    "devtools"
+  ],
+  "feedback": "https://github.com/albelop",
+  "url": "6-network"
+}
