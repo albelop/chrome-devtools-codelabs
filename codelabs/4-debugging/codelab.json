@@ -9,7 +9,7 @@
   "title": "4) Debugging JavaScript",
   "authors": "Alberto López-Barranco",
   "summary": "Pause and debug your Javascript code, watch variable changes, manage listeners and breakpoints…",
-  "source": ".\\4-debugging-js.md",
+  "source": "",
   "theme": "",
   "status": [
     "published"
