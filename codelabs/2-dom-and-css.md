@@ -178,5 +178,14 @@ To capture an animation, just perform the interaction that triggers the animatio
 
 The Timeline will show a list with all the elements that
 
+
+La línea de tiempo nos muestra todos los elementos de la página que tienen alguna de sus propiedades animadas, y en ella podemos editar la duración de las animaciones, el retraso, los fotogramas claves o incluso la curva Bézier de cada  una de ellas.
+El panel también muestra controles para reproducir y repetir la animación, reducir la velocidad (para inspeccionar el movimiento en detalle), o inspeccionar el código fuente de la animación.
+
+
 ### Change speed
+
+Para reproducir un grupo de animaciones 
+
+
 ### Modify
